@@ -1,20 +1,10 @@
 import random
 import math
+
 def potecia():
     for x in range(10):
         valor = random.randint(1, 10)
     return valor
-
-
-camion = lambda x : (2 * x)+1
-tractor = lambda x: round((math.log(x, 2)))
-sedan = lambda x: (3 * x)**2
-bus = lambda x: 5 * x
-
-def ganador(x):
-    if x >= 1000:
-        return True
-    return False
 
 def mayor(num1,num2,num3,num4):
     if(num1>=num2) and (num1>=num3) and (num1>=num4):
@@ -27,6 +17,10 @@ def mayor(num1,num2,num3,num4):
          numeroMayor = num4
     return numeroMayor
 
+camion = lambda x : (2 * x)+1
+tractor = lambda x: round((math.log(x, 2)))
+sedan = lambda x: (3 * x)**2
+bus = lambda x: 5 * x
 
 flota = {
     'camion' : camion,
